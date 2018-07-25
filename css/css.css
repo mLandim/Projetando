@@ -1,0 +1,547 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo-principal{
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+    .topo{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 7%;
+        text-align: center;
+        
+
+    }
+        .titulo{
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+            font-size: 26px;
+            font-weight: bolder;
+            color: #ffffff;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+           
+            background-color: #333333;
+            overflow: visible;
+            /*border-bottom: 1px solid #262626;*/
+            z-index:2;
+
+            
+        }
+            .menu-lateral-ico{
+                position: relative;
+                display: inline-block;
+                border: 1px solid #cccccc;
+                border-radius: 2px;
+                cursor: pointer;
+                margin-left: 10px;
+               
+            }
+                .menu-lateral-ico:hover{
+                    background-color: #cccccc;
+                    color: #ffffff;
+                }
+
+            .titulo-texto{
+                position: relative;
+                display: inline-block;
+                padding-left: 12px;
+                height: 40px;
+                line-height: 40px;
+                width: auto;
+            }
+            .top-menu{
+                position: absolute;
+                display: inline-block;
+                font-size: 12px;
+                top:0;
+                right: 30px;
+                color: #0099ff;
+                height: 40px;
+                line-height: 40px;
+                width: auto;
+               
+            }
+            .top-menu-item{
+                position: relative;
+                display: inline-block;
+                margin-left: 6px;
+                cursor: pointer;
+                font-weight: normal;
+                padding:  0 4px 0 4px;
+            }
+                .top-menu-item:hover{
+                    color:#006bb3;
+                    background-color: #b3b3b3;
+                    
+                    
+                }
+            .top-menu-item-text{
+                position: relative;
+                display: inline-block;
+                margin-left: 6px;
+                cursor: pointer;
+                font-weight: normal;
+                padding:  0 4px 0 4px;
+                overflow: visible;
+                
+            }
+                .top-menu-item-text:hover{
+                    color:#006bb3;
+                    background-color: #b3b3b3;
+                    
+                    
+                }
+                
+                .top-menu-div{
+                    position: absolute;
+                    display: block;
+                    top: 40px;
+                    right: -14px;
+                    width: auto;
+                    height: auto;
+                    
+                    z-index: 3;
+                    text-align: center;
+                }
+                .top-menudiv-seta{
+                    display: block;
+                    position: absolute;
+                    right: 16px;
+                    top: -16px;
+                    height: 24px;
+                    width: 24px;
+                    background-image: url('../img/seta_up_02.png'); 
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 4;
+
+                }
+                .top-menudiv-inner{
+                    position: relative;
+                    display: inline-block;
+                    margin-top:7px;
+                    background-color: #ffffff;
+                    border: 1px solid #cccccc;
+                    border-radius: 4px;
+                    z-index: 3;
+                    box-shadow: 2px 2px 4px #595959;
+                    
+                }   
+                    .menu-dominios{
+                        width: 190px;
+                        height: auto;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        cursor: default;
+                    }
+                        .menu-dominios-lista{
+                            position: relative;
+                            display: inline-block;
+                            margin-top:7px;
+                            width: 90%;
+                            height: auto;
+                            max-height: 150px;
+                            overflow-y: auto;
+                            
+                        }
+                            .dominios-lista-item{
+
+                                position: relative;
+                                display: inline-block;
+                                margin-top:2px;
+                                width: 90%;
+                                height: 25px;
+                                line-height: 25px;
+                                background-color: #f2f2f2;
+                                color: #0099ff;
+                                cursor: pointer;
+                                border: 1px solid #ffffff;
+                            }
+                                .dominios-lista-item:hover{
+                                    background-color: #f2f2f2;
+                                    border: 1px solid #cccccc;
+                                }
+                        .menu-dominios-opcoes{
+                            position: relative;
+                            display: inline-block;
+                            margin-top:7px;
+                            width: 90%;
+                            height: auto;
+                            max-height: 60px;
+                            overflow-y: auto;
+                        }
+                            .dominios-opcoes-item{
+                                position: relative;
+                                display: inline-block;
+                                margin-top:2px;
+                                width: 90%;
+                                height: 25px;
+                                line-height: 25px;
+                                color: #0099ff;
+                                cursor: pointer;
+                                font-weight: bold;
+                            }
+                                .dominios-opcoes-item:hover{
+                                    background-color: #f2f2f2;
+                                }
+
+                    .menu-info{
+                        width: 250px;
+                        height: auto;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        font-size: 11px;
+                        font-weight: bold;
+                        cursor: default;
+                    }
+                        .menu-info-span{
+                            display: block;
+                            width: 100%;
+                            height: 20px;
+                            line-height: 20px;
+                            color: #595959;
+                        }
+                        
+                    .menu-ajuda{
+                        width: 250px;
+                        height: 250px;
+                        cursor: default;
+                    }
+                    
+
+
+
+    .conteudo{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 93%;
+        text-align: center;
+        z-index:1;
+
+    }
+
+        .categorias{
+            position: relative;
+            display: inline-block;
+            width: 5%;
+            height: 100%;
+            vertical-align: top;
+        }   
+            .categorias-titulo{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 30px;
+                margin-bottom: 10px;
+                text-align: center;
+                vertical-align: top;
+                color: #888888;
+                border-radius: 2px;
+                overflow: hidden;
+                font-size: 12px;
+                font-weight: bold;
+
+                
+
+            }  
+            .categoria{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 60px;
+                margin-bottom: 10px;
+                text-align: center;
+                vertical-align: top;
+                cursor: pointer;
+                color: #888888;
+                border-radius: 2px;
+                overflow: hidden;
+
+                
+
+            }  
+                .categoria:hover{
+                    background-color: #f2f2f2;
+                    color: #595959;
+                }
+                .categoria-ativa{
+                    color:#0099ff;/*#ff9933;*/
+                }
+                    .categoria-ativa:hover{
+                        background-color: #f2f2f2;
+                        color:#0099ff;/*#ff9933;*/
+                    }
+                .categoria-icone{
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    height: 54%;
+                    margin-top: 5%;
+
+                }
+                .categoria-texto{
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    height: 40%;
+                    text-align: center;
+                    font-size: 11px;
+
+                }
+
+        .kanban-container{
+            position: relative;
+            display: inline-block;
+            width: 94%;
+            height: 100%;
+            text-align: center;
+            
+        }
+
+            .kanban-grid{
+                position: relative;
+                display: inline-block;
+                width: 99%;
+                height: 99%;
+                text-align: center;
+                border: 1px solid #cccccc;
+            }
+
+                .kanban-grid-titulos{
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    height: 40px;
+                    background-color: #f2f2f2;
+                    vertical-align: top;
+                    text-align: center;
+                }
+                    .kanban-grid-titulos-item{
+                        position: relative;
+                        display: inline-block;
+                        width: 24.8%;
+                        height: 40px;
+                        line-height: 40px;
+                        vertical-align: middle;
+                        text-align: center;
+                        background-color: #f2f2f2;
+                        color: #595959;
+                        font-size: 26px;
+                        font-weight: bold;
+                        overflow: hidden;
+                    }
+                    .border-r{
+                        border-right: 1px solid #cccccc;
+                    }
+                    i.fechar-bloco{
+                        position: absolute;
+                        display: block;
+                        top: 0;
+                        height: 40px;
+                        line-height: 40px;
+                        right: 2%;
+                        cursor: pointer;
+                    }
+                    i.abrir-bloco{
+                        position: relative;
+                        display: block;
+                        height: 40px;
+                        line-height: 40px;
+                        cursor: pointer;
+                    }
+                    .novo-item{
+                        
+                        cursor: pointer;
+                        color:#00cc00;
+                    }
+
+                .kanban-grid-blocos{
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    height: calc(100% - 40px);
+                    vertical-align: top;
+                    text-align: center;
+                    
+                }
+                    .kanban-grid-blocos-item{
+                        position: relative;
+                        display: inline-block;
+                        width: 24.8%;
+                        height: 100%;
+                        vertical-align: top;
+                        text-align: center;
+                        overflow-y:auto;
+                        
+                    }
+                        .bloco-lista{
+                            position: relative;
+                            display: inline-block;
+                            width: 99%;
+                            /*min-height: 100px;*/
+                            height:auto;
+                            margin-top: 10px;
+                            
+                            text-align: center;
+                            /*background-color: #f2f2f2;*/
+                            
+                
+                        }
+                        .bloco-lista-ativo{
+                            background-color: #f2f2f2;
+                            padding-bottom: 60px;
+                            border: 1px dashed #cccccc;
+                        }
+                            .bloco-lista-item{
+                                position: relative;
+                                display: inline-block;
+                                width:280px;
+                                min-height: 30px;
+                                max-height: 200px;
+                                text-align: left;
+                                margin: 5px;
+                                cursor: pointer;
+                                vertical-align: top;
+                                border:1px solid #cccccc;
+                                padding-bottom: 40px;
+                                box-shadow: 2px 2px 4px #595959;
+
+                            }
+                                .item-arrastar{
+                                    position: relative;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width:99%;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    font-size: 11px;
+                                    font-style: italic;
+                                    color: #888888;
+                                    border: 1px dashed #cccccc;
+                                }
+                                .item-titulo{
+                                    
+                                    position: relative;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width:80%;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    text-align: left;
+                                    font-size: 12px;
+                                    font-weight: bold;
+                                    color: #595959;
+                                    margin-left: 2%;
+                                    
+
+                                }
+                                .item-prazo{
+                                    position: relative;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width:13%;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: #888888;
+                                    
+
+                                }
+                                .item-descricao{
+                                    
+                                    position: relative;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width:96%;
+                                    max-height: 100px;
+                                    text-align: justify;
+                                    font-size: 11px;
+                                    font-weight: normal;
+                                    color: #595959;
+                                    margin-left: 2%;
+                                    margin-bottom: 5px;
+                                    
+                                    
+
+                                }
+                                .item-data{
+                                    
+                                    position: relative;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width:40%;
+                                    height: 16px;
+                                    line-height: 16px;
+                                    text-align: left;
+                                    font-size: 11px;
+                                    font-weight: normal;
+                                    color: #595959;
+                                    margin-left: 2%;
+                                    
+
+                                }
+                                .item-dono{
+                                    
+                                    position: relative;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width:96%;
+                                    height: 16px;
+                                    line-height: 16px;
+                                    text-align: left;
+                                    font-size: 11px;
+                                    font-weight: normal;
+                                    color: #595959;
+                                    margin-left: 2%;
+                                    
+
+                                }
+                                .item-desenvolvedores{
+                                    position: relative;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width:96%;
+                                    height: 16px;
+                                    line-height: 16px;
+                                    text-align: left;
+                                    font-size: 11px;
+                                    font-weight: normal;
+                                    color: #595959;
+                                    margin-left: 2%;
+                                    overflow: hidden;
+                                }
+                                .item-comandos{
+                                    position: absolute;
+                                    display: block;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    width:96%;
+                                    bottom:0;
+                                    left:2%;
+                                    text-align: right;
+                                    color: #888888;
+                                    /*border-top:1px solid #cccccc;*/
+                                }
+                                .comandos-icone:hover{
+                                    color: #0099ff;
+                                }
+
