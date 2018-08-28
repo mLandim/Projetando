@@ -57,6 +57,25 @@ $_FC = $apresantacaoArr[5]; //FUNÇÃO
 
     <div id="app" class="conteudo-principal">
 
+
+        <!-- Formulários Flutuantes -->
+        <div class="novo-grupo" v-if="formularioNovoGrupo">
+            <div class="formulario-flutuante-titulo">Novo Grupo <i class="fa fa-times fa-fw fechar-tabela" @click="formularioNovoGrupo = !formularioNovoGrupo"></i></div>
+            <div class="formulario-flutuante-corpo">
+                
+            </div>
+            
+        </div>
+        <div class="mask" v-if="formularioNovoGrupo"></div>
+        <div class="novo-grupo" v-if="formularioEditarGrupo">
+            <div class="formulario-flutuante-titulo">Editar Grupos <i class="fa fa-times fa-fw fechar-tabela" @click="formularioEditarGrupo = !formularioEditarGrupo"></i></div>
+            <div class="formulario-flutuante-corpo"></div>
+        </div>
+        <div class="mask" v-if="formularioEditarGrupo"></div>
+
+
+
+
         <!-- Primaeira Parte >>> Topo com T´titulo e menus -->
         <div class="topo">
 
@@ -80,10 +99,14 @@ $_FC = $apresantacaoArr[5]; //FUNÇÃO
                             <div class="top-menudiv-inner menu-dominios">
 
                                 <div class="menu-dominios-lista">
-                                    <div class="dominios-lista-item" v-for="(item, key) in areaDeTrabalho.dominiosCadastrados">{{ item.nome }}</div>
+                                    <div class="dominios-lista-item" v-for="(item, key) in areaDeTrabalho.dominiosCadastrados" >
+                                        <span v-if="empregadoLogado.matricula == item.nome">MEU GRUPO</span>
+                                        <span v-else>{{item.nome}}</span>
+                                    </div>
                                 </div>
                                 <div class="menu-dominios-opcoes">
-                                    <div class="dominios-opcoes-item" ><i class="fa fa-plus-circle fa-fw fa-lg"></i>Novo Grupo</div>
+                                    <div class="dominios-opcoes-item" @click="formularioNovoGrupo = true" ><i class="fa fa-plus-circle fa-fw fa-lg" ></i>Novo Grupo</div>
+                                    <div class="dominios-opcoes-item" @click="formularioEditarGrupo = true" ><i class="fa fa-edit fa-fw fa-lg" ></i>Editar Grupos</div>
                                 </div>
 
                             </div>
@@ -125,6 +148,7 @@ $_FC = $apresantacaoArr[5]; //FUNÇÃO
         <div class="conteudo">
 
             <!-- Lista de Categorias Disponíveis -->
+            <!--
             <div class="categorias">
                 <div class="categorias-titulo">Categorias Disponíveis</div>
                 <div :class="{'categoria-ativa': categoria.selecionado}" class="categoria" v-for="categoria in categorias" @click="mudarCategoria(categoria.id, categoria.texto)">
@@ -133,6 +157,7 @@ $_FC = $apresantacaoArr[5]; //FUNÇÃO
                 </div>
                 
             </div>
+            -->
 
             <!-- Quadro de Projetos -->
             <div class="kanban-container">
@@ -219,6 +244,7 @@ $_FC = $apresantacaoArr[5]; //FUNÇÃO
         </div>
 
     </div>
+    
     
     <script src="<?php echo $jquery;?>"></script>
     <script src="<?php echo $vue;?>"></script>

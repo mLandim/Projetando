@@ -17,7 +17,8 @@ var data = {
 
     },
 
-    
+    formularioNovoGrupo:false,
+    formularioEditarGrupo:false,
     
 
     //Configuracões > Dados da área de trabalho
@@ -77,7 +78,6 @@ var vue = new Vue({
     data: data,
     created: function(){
         var self = this;
-        
         //Iniciando chamadas - sistema
         this.inicializaConfiguracoes();
     },
@@ -257,6 +257,7 @@ var vue = new Vue({
                                     permiteContinuar = true;
                                 }else{
                                     alert('Indique um ou mais integrantes para a equipe!');
+                                    //Selecionar Integrantes
                                     permiteContinuar = false;
                                 }
                             }else{
